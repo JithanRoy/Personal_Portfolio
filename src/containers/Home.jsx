@@ -1,7 +1,8 @@
 import React from "react";
-import { AniimatePresence, motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"
 import { Hero } from "../assets";
-import { HeroTypeWritter } from "../components";
+import { HeroTypeWritter, HomeSocialLinks } from "../components";
+import { Socials } from "../utils/helper";
 
 const Home = () => {
   return (
@@ -29,6 +30,23 @@ const Home = () => {
              <p className="text-base text-texlight mt-6 text-center lg:text-left">
                 Junior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, CSS OOP, JavaScript, C++, MySQL. Strong background in project management and customer relations.
              </p>
+
+             {/* Social Links */}
+             <div className="flex items-center justify-center gap-16 mt-16">
+                <AnimatePresence>
+                  {Socials && Socials.map((item, index) => (
+                      <HomeSocialLinks key={index} data={item} index={index} />
+                  ))}
+                </AnimatePresence>
+             </div>
+             {/* Hire me  */}
+             <a 
+                href="##"
+                style={{boxShadow: "inset 0px 0px 10px rgba(255, 255, 255, 0.3)"}}
+                className="mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary"
+             >
+                <p className="text-texlight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">Hire me</p>
+             </a>
           </div>
 
           {/* hero image */}
