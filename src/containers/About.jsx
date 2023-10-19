@@ -30,8 +30,21 @@ const About = () => {
          <div className="w-full flex items-center justify-center px-8">
             <div className="w-full lg:w-96 p-[2px] rounded-md bg-gradient-to-br from bg-primary to-secondary relative">
                 <img src={about} className="w-full rounded-md h-auto object-contain" alt=""/>
+                <div className="absolute w-full h-full -top-3 -left-2 bg-gradient-to-br from bg-primary to-secondary rounded-md blur-[5px] -z-10"></div>
             </div>
          </div>
+          {/* text content  */}
+         <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
+                <p className="text-texlight text-base tracking-wide text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eius recusandae! Dicta, fuga optio dignissimos odio asperiores neque molestias minus quos accusantium sequi iure nulla tempora, eveniet quis delectus odit?
+                </p>
+                <p className="text-texlight text-base tracking-wide text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eius recusandae! Dicta, fuga optio dignissimos odio asperiores neque molestias minus quos accusantium sequi iure nulla tempora, eveniet quis delectus odit?
+                </p>
+                <p className="text-texlight text-base tracking-wide text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eius recusandae! Dicta, fuga optio dignissimos odio asperiores neque molestias minus quos accusantium sequi iure nulla tempora, eveniet quis delectus odit?
+                </p>
+            </div>
       </div>
     </section>
   )
