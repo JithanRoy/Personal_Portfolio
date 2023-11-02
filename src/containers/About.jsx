@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence, delay } from "framer-motion";
+import { motion } from "framer-motion";
 import { Leaf1, Leaf2, about } from "../assets";
 
 const About = () => {
