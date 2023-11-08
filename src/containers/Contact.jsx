@@ -1,8 +1,9 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { Leaf1, Leaf2 } from "../assets";
 import { db } from "../config/firebase.config"
 import { addDoc, collection } from "firebase/firestore";
+import Alert from "./Alert";
 
 const Contact = () => {
   const [ data, setData ] = useState({
@@ -10,6 +11,11 @@ const Contact = () => {
     lastName: "",
     email: "",
     message: "",
+  })
+  const [ alert, setAlert ] = useState({
+    isAlert: false,
+    message: "",
+    status: null,
   })
 
   const handleTextChange = (e) => {
@@ -19,26 +25,71 @@ const Contact = () => {
   }
 
   const sendMessage = async () => {
-    if( data.email === "" || data.email === null ) {
+    if( data.email === "" || data.message === null ) {
       // throw an alert
+      setAlert({
+        isAlert: true,
+        message: "Required fields cannot be empty",
+        status: "warning"
+      })
+     let alertInterval = setInterval(() => {
+        setAlert({
+          isAlert: false,
+          message: "",
+          status: null,
+        });
+        clearInterval(alertInterval);
+      }, 4000)
     } else {
       await addDoc(collection(db, "messages"), {...data})
       .then(() => {
+        setData({firstName:"", lastName: "", email:"", message:""})
         //throw that alert message
-
+          setAlert({
+            isAlert: true,
+            message: "Thanks for submitting your request",
+            status: "success",
+          })
+          let alertInterval = setInterval(() => {
+            setAlert({
+              isAlert: false,
+              message: "",
+              status: null,
+            });
+            clearInterval(alertInterval);
+          }, 4000)
       })
       .catch((err) => {
         //throw that alert
-        
+        setAlert({
+          isAlert: true,
+          message: `Error: ${err.message}`,
+          status: "danger"
+        })
+        let alertInterval = setInterval(() => {
+          setAlert({
+            isAlert: false,
+            message: "",
+            status: null,
+          });
+          clearInterval(alertInterval);
+        }, 4000)
       })
     }
   }
 
   return (
     <section 
-    id="contact" 
-    className="flex items-center justify-center flex-col gap-12 my-12"
+        id="contact" 
+        className="flex items-center justify-center flex-col gap-12 my-12"
     >
+      {/* Toast alert notification */}
+      <AnimatePresence>
+        {alert.isAlert && (
+            <Alert status={alert.status} message={alert.message} />
+        )}
+      </AnimatePresence>
+
       {/* title  */}
       <div className="w-full flex items-center justify-center py-24">
         <motion.div
@@ -98,7 +149,9 @@ const Contact = () => {
               </textarea>
 
               <div className="w-full flex items-center justify-center lg:justify-end">
-                <button className="px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-black hover:border hover:border-primary hover:text-primary " onClick={sendMessage}>
+                <button 
+                className="px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-black hover:border hover:border-primary hover:text-primary " 
+                onClick={sendMessage}>
                   Send
                 </button>
               </div>
