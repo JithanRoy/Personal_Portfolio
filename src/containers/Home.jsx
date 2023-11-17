@@ -25,7 +25,7 @@ const Home = () => {
              <h2 className="text-2xl lg:text-4xl text-texlight mt-4">
                 And I'm{" "}
                 <HeroTypeWritter 
-                  words={["a Developer..", "a Project Manager..", "a Freelanzer.."]}
+                  words={["a Developer..", "a Project Manager..", "a Freelancer.."]}
                   speed={100}
                 />
              </h2>

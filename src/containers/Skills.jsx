@@ -1,12 +1,12 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Leaf1, Leaf2, about } from "../assets";
+import { motion } from "framer-motion";
+import { Leaf1, Leaf2 } from "../assets";
 import { SkillCard } from "../components";
 
 const Skills = () => {
   return (
     <section 
-    id="about" 
+    id="skills" 
     className="flex items-center justify-center flex-col gap-12 my-12"
     >
       {/* title  */}
@@ -19,7 +19,7 @@ const Skills = () => {
           className="flex items-center gap-5">
            <img src={Leaf1} className="w-6 h-auto object-contain" alt="leaf" />
             <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize text-xl font-serif tracking-widest">
-                About
+                skills
             </p>
            <img src={Leaf2} className="w-6 h-auto object-contain" alt="leaf" />
         </motion.div>
