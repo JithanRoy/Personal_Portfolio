@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/JithanRoy/Personal_Portfolio.git/static/css/main.43ae674a.css",
+    "main.js": "/JithanRoy/Personal_Portfolio.git/static/js/main.15d83d65.js",
+    "static/media/Thumb-pixabay-clone-v2–1.png": "/JithanRoy/Personal_Portfolio.git/static/media/Thumb-pixabay-clone-v2–1.283da6c31fa2c95ed90b.png",
+    "static/media/Thumb-image-sharing-app-react-native-mar-23-updated.png": "/JithanRoy/Personal_Portfolio.git/static/media/Thumb-image-sharing-app-react-native-mar-23-updated.fe8a59fd18b989b7aa68.png",
+    "static/media/thumb-fullstack-socialmedia-app-react-sanity.png": "/JithanRoy/Personal_Portfolio.git/static/media/thumb-fullstack-socialmedia-app-react-sanity.9bb73b25697ca2c1c519.png",
+    "static/media/hero.png": "/JithanRoy/Personal_Portfolio.git/static/media/hero.6a84c686f6533686730d.png",
+    "static/media/Thumb-openai-withreactjs.png": "/JithanRoy/Personal_Portfolio.git/static/media/Thumb-openai-withreactjs.7a55325f78f1d968b617.png",
+    "static/media/Thumb-codepen-clone.png": "/JithanRoy/Personal_Portfolio.git/static/media/Thumb-codepen-clone.8d2b382f47841d983f02.png",
+    "static/media/thumb_restaurant_app_mar22.png": "/JithanRoy/Personal_Portfolio.git/static/media/thumb_restaurant_app_mar22.e9f4f9a8c04ea8d4c939.png",
+    "static/media/Thumb-expo-chat-app.png": "/JithanRoy/Personal_Portfolio.git/static/media/Thumb-expo-chat-app.6c76d373ff509124c44e.png",
+    "static/media/about.png": "/JithanRoy/Personal_Portfolio.git/static/media/about.7513d4266961acb8398b.png",
+    "static/media/leaf2.png": "/JithanRoy/Personal_Portfolio.git/static/media/leaf2.659264fac53756a980a1.png",
+    "static/media/Leaf.png": "/JithanRoy/Personal_Portfolio.git/static/media/Leaf.1073dfdd6f893dc9cb0f.png",
+    "static/media/thumb-portfolio-firebase.jpeg": "/JithanRoy/Personal_Portfolio.git/static/media/thumb-portfolio-firebase.b20965ddccf3c849d6a8.jpeg",
+    "static/media/thumb-fresh0juics-tweenmax.jpg": "/JithanRoy/Personal_Portfolio.git/static/media/thumb-fresh0juics-tweenmax.fa4a7ff6d0b7210142fc.jpg",
+    "index.html": "/JithanRoy/Personal_Portfolio.git/index.html",
+    "main.43ae674a.css.map": "/JithanRoy/Personal_Portfolio.git/static/css/main.43ae674a.css.map",
+    "main.15d83d65.js.map": "/JithanRoy/Personal_Portfolio.git/static/js/main.15d83d65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43ae674a.css",
+    "static/js/main.15d83d65.js"
+  ]
+}
