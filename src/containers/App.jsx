@@ -54,8 +54,9 @@ const App = () => {
                     <p className="text-texlight text-center">
                       Jithanroyjony@gmail.com
                     </p>
-                    <p class="text-texlight text-center">+880 1521327660</p>
-                    <a href="#"><p class="text-primary text-center">Hire Me</p>
+                    <p className="text-texlight text-center">+880 1521327660</p>
+                    <a href="#">
+                      <p className="text-primary text-center">Hire Me</p>
                     </a>
                 </div>
             </div>
