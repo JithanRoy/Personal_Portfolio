@@ -21,7 +21,6 @@ import {
   SocialMedia,
 } from "../assets";
 
-import Imaginify from '../assets/img/Project/imaginify.png';
 import NewsLetter from '../assets/img/Project/newsLetter.png';
 import Tasker from '../assets/img/Project/tasker.png';
 

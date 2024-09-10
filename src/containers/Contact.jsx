@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { Leaf1, Leaf2 } from "../assets";
-import { db } from "../config/firebase.config"
-import { addDoc, collection } from "firebase/firestore";
+// import { db } from "../config/firebase.config"
+// import { addDoc, collection } from "firebase/firestore";
 import Alert from "./Alert";
 
 const Contact = () => {
@@ -41,40 +41,40 @@ const Contact = () => {
         clearInterval(alertInterval);
       }, 4000)
     } else {
-      await addDoc(collection(db, "messages"), {...data})
-      .then(() => {
-        setData({firstName:"", lastName: "", email:"", message:""})
-        //throw that alert message
-          setAlert({
-            isAlert: true,
-            message: "Thanks for submitting your request",
-            status: "success",
-          })
-          let alertInterval = setInterval(() => {
-            setAlert({
-              isAlert: false,
-              message: "",
-              status: null,
-            });
-            clearInterval(alertInterval);
-          }, 4000)
-      })
-      .catch((err) => {
-        //throw that alert
-        setAlert({
-          isAlert: true,
-          message: `Error: ${err.message}`,
-          status: "danger"
-        })
-        let alertInterval = setInterval(() => {
-          setAlert({
-            isAlert: false,
-            message: "",
-            status: null,
-          });
-          clearInterval(alertInterval);
-        }, 4000)
-      })
+      // await addDoc(collection(db, "messages"), {...data})
+      // .then(() => {
+      //   setData({firstName:"", lastName: "", email:"", message:""})
+      //   //throw that alert message
+      //     setAlert({
+      //       isAlert: true,
+      //       message: "Thanks for submitting your request",
+      //       status: "success",
+      //     })
+      //     let alertInterval = setInterval(() => {
+      //       setAlert({
+      //         isAlert: false,
+      //         message: "",
+      //         status: null,
+      //       });
+      //       clearInterval(alertInterval);
+      //     }, 4000)
+      // })
+      // .catch((err) => {
+      //   //throw that alert
+      //   setAlert({
+      //     isAlert: true,
+      //     message: `Error: ${err.message}`,
+      //     status: "danger"
+      //   })
+      //   let alertInterval = setInterval(() => {
+      //     setAlert({
+      //       isAlert: false,
+      //       message: "",
+      //       status: null,
+      //     });
+      //     clearInterval(alertInterval);
+      //   }, 4000)
+      // })
     }
   }
 
