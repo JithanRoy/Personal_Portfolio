@@ -34,17 +34,25 @@ const About = () => {
             </div>
          </div>
           {/* text content  */}
-         <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
-                <p className="text-texlight text-base tracking-wide text-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eius recusandae! Dicta, fuga optio dignissimos odio asperiores neque molestias minus quos accusantium sequi iure nulla tempora, eveniet quis delectus odit?
-                </p>
-                <p className="text-texlight text-base tracking-wide text-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eius recusandae! Dicta, fuga optio dignissimos odio asperiores neque molestias minus quos accusantium sequi iure nulla tempora, eveniet quis delectus odit?
-                </p>
-                <p className="text-texlight text-base tracking-wide text-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eius recusandae! Dicta, fuga optio dignissimos odio asperiores neque molestias minus quos accusantium sequi iure nulla tempora, eveniet quis delectus odit?
-                </p>
-            </div>
+          <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
+              <p className="text-texlight text-base tracking-wide text-justify">
+                  I am a Software Engineer with a passion for building dynamic and user-friendly web applications. My
+                  journey in the tech world started with a solid foundation in computer science, which I've built upon
+                  through hands-on experience in both trainee and junior software engineer roles.
+              </p>
+              <p className="text-texlight text-base tracking-wide text-justify">
+                  I have a proven track record of contributing to front-end development, leveraging my expertise in
+                  HTML, CSS, JavaScript, React, NextJs and Typescript to craft engaging user interfaces. I excel at
+                  collaborating with backend teams to ensure seamless integration and optimal performance of web
+                  applications. My adaptability is evident in my ability to tailor web projects for various platforms,
+                  ensuring a consistent and enjoyable experience for all users.
+              </p>
+              <p className="text-texlight text-base tracking-wide text-justify">
+                  Beyond my core skills, I am a proactive learner, constantly expanding my knowledge base to stay at the
+                  forefront of technology. I am currently exploring the realms of Node.js, NestJS, and Python Django,
+                  showcasing my commitment to professional development and my eagerness to tackle new challenges.
+              </p>
+          </div>
       </div>
     </section>
   )

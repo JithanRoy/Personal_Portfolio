@@ -16,7 +16,7 @@ const App = () => {
         <Home />
 
         {/* services count cards  */}
-        <ServiceCount />
+        {/*<ServiceCount />*/}
 
         {/* about container */}
 
@@ -43,22 +43,21 @@ const App = () => {
                   ))}
                 </AnimatePresence>
             </div>
-            <div className="w-full grid grid-cols-1 lg:grid-cols-3 mt-12">
-                <p className="text-texlight text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus odit, quos architecto ex, voluptatem eos molestiae ipsam debitis alias saepe hic. Voluptate, itaque dolorum dicta qui error veritatis at est?
-                </p>
-                <p class="text-texlight text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus odit, quos architecto ex, voluptatem eos molestiae ipsam debitis alias saepe hic
-                </p>
-                <div className="w-full flex flex-col items-center justify-center gap-3">
-                    <p className="text-texlight text-center">
-                      Jithanroyjony@gmail.com
-                    </p>
-                    <p className="text-texlight text-center">+880 1521327660</p>
-                    <a href="#">
-                      <p className="text-primary text-center">Hire Me</p>
-                    </a>
-                </div>
+                {/*<p className="text-texlight text-center">*/}
+                {/*  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus odit, quos architecto ex, voluptatem eos molestiae ipsam debitis alias saepe hic. Voluptate, itaque dolorum dicta qui error veritatis at est?*/}
+                {/*</p>*/}
+
+            <div className="w-full flex flex-col items-center justify-center mt-12 leading-loose">
+                        <p className="text-texlight text-center">
+                            Thanks for visiting my profile!
+                        </p>
+                        <p className="text-texlight text-center">
+                            Jithanroyjony@gmail.com
+                        </p>
+                        <p className="text-texlight text-center">+880 1521327660</p>
+                        <a href="mailto:jithanroyjony@gmail.com">
+                            <p className="text-primary text-center">Hire Me</p>
+                        </a>
             </div>
         </div>
     </div>

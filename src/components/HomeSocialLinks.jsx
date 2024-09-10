@@ -5,7 +5,8 @@ const HomeSocialLinks = ({index, data}) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <motion.a 
-    key={index} 
+    key={index}
+    target='_blank'
     href={data.uri}
     initial={{ opacity: 0, y: 25}}
     animate={{opacity: 1, y: 0}}

@@ -21,29 +21,34 @@ import {
   SocialMedia,
 } from "../assets";
 
+import Imaginify from '../assets/img/Project/imaginify.png';
+import NewsLetter from '../assets/img/Project/newsLetter.png';
+import Tasker from '../assets/img/Project/tasker.png';
+
+
 export const Socials = [
   {
     id: `facebook-${Date.now()}`,
     Icon: FaFacebookF,
-    uril: "",
+    uri: "",
     color: "#1877F2",
   },
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    uril: "",
+    uri: "https://www.linkedin.com/in/jithan-r-2b7a3323b/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    uril: "",
+    uri: "https://github.com/JithanRoy",
     color: "#fff",
   },
   {
     id: `youtube-${Date.now()}`,
     Icon: FaYoutube,
-    uril: "",
+    uri: "",
     color: "#ff0000",
   },
 ];
@@ -84,21 +89,21 @@ export const Menus = [
 export const ProjectsData = [
   {
     id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
-    imgSrc: RestaurantClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "Tasker",
+    imgSrc: Tasker,
+    gitURL: "https://tasker-mauve.vercel.app/",
   },
   {
     id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
-    imgSrc: CodePenClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "NewsLetter Platform",
+    imgSrc: NewsLetter,
+    gitURL: "newsletter-project-six.vercel.app",
   },
   {
     id: `openai-${Date.now()}`,
-    name: "OpenAI",
+    name: "Imaginify",
     imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://github.com/JithanRoy/Imaginify",
   },
   {
     id: `chatapp-${Date.now()}`,
@@ -118,22 +123,22 @@ export const ProjectsData = [
     imgSrc: PixabayClone,
     gitURL: "https://github.com/Vetrivel-VP",
   },
-  {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `portfoliofirebase-${Date.now()}`,
-    name: "Portfolio UI Fireabse",
-    imgSrc: PortfolioFirebase,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
+  // {
+  //   id: `freshjuiceui-${Date.now()}`,
+  //   name: "Fresh Juice UI Build",
+  //   imgSrc: FreshJuiceUI,
+  //   gitURL: "https://github.com/Vetrivel-VP",
+  // },
+  // {
+  //   id: `socialmedia-${Date.now()}`,
+  //   name: "Social Media App",
+  //   imgSrc: SocialMedia,
+  //   gitURL: "https://github.com/Vetrivel-VP",
+  // },
+  // {
+  //   id: `portfoliofirebase-${Date.now()}`,
+  //   name: "Portfolio UI Fireabse",
+  //   imgSrc: PortfolioFirebase,
+  //   gitURL: "https://github.com/Vetrivel-VP",
+  // },
 ];
