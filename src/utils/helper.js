@@ -11,14 +11,9 @@ import {
 } from "react-icons/fa6";
 import {
   ChatApp,
-  CodePenClone,
-  FreshJuiceUI,
   ImageSharing,
   OpenAI,
   PixabayClone,
-  PortfolioFirebase,
-  RestaurantClone,
-  SocialMedia,
 } from "../assets";
 
 import NewsLetter from '../assets/img/Project/newsLetter.png';
